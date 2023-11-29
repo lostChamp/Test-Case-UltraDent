@@ -73,10 +73,10 @@
                                 </thead>
                                 <tbody class="">
                                     <tr class="work__types">
-                                        <td><input type="text" name="table_type_0" value=""></td>
-                                        <td><input type="number" name="table_num_0" value=""></td>
-                                        <td><input type="date" name="table_date_0" value="" ></td>
-                                        <td><input type="text" name="table_time_0" value="" placeholder="чч:мм"></td>
+                                        <td><input type="text" name="tableType0" value=""></td>
+                                        <td><input type="number" name="tableNum0" value=""></td>
+                                        <td><input type="date" name="tableDate0" value="" ></td>
+                                        <td><input type="text" name="tableTime0" value="" placeholder="чч:мм"></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -300,29 +300,8 @@
             </div>
         </section>
     </main>
-    <script src="/js/bootstrap/bootstrap.min.js"></script>
     <script src="/js/add-rows-table.js"></script>
+    <script src="/js/bootstrap/bootstrap.min.js"></script>
     <script src="/js/add-tooth-point3.js" type="module"></script>
-    <script>
-        (function () {
-            'use strict'
-
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            var forms = document.querySelectorAll('.needs-validation')
-
-            // Loop over them and prevent submission
-            Array.prototype.slice.call(forms)
-                .forEach(function (form) {
-                    form.addEventListener('submit', function (event) {
-                        if (!form.checkValidity()) {
-                            event.preventDefault()
-                            event.stopPropagation()
-                        }
-
-                        form.classList.add('was-validated')
-                    }, false)
-                })
-        })()
-    </script>
 </body>
 </html>
