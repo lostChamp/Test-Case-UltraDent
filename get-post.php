@@ -9,4 +9,5 @@ if(!empty($_POST)) {
             print $key . " = " . $value . "</br>";
         }
     }
+    print(json_encode($_POST, JSON_UNESCAPED_UNICODE));
 }
