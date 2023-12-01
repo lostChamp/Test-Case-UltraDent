@@ -15,7 +15,7 @@
         <section>
             <div class="container">
                 <h1>Заказ-наряд</h1>
-                    <form method="post" action="get-post.php" class="order needs-validation" novalidate>
+                    <form method="post" action="infoFormAndSendPDF.php" class="order needs-validation" novalidate>
                         <div class="order__form-group">
                             <div class="order__form-title">
                                 1.Общие данные
