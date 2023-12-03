@@ -11,6 +11,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     margin: 5%;
 }
@@ -53,12 +57,25 @@ input[type="checkbox"] {
     margin-top: 60px;
     border-bottom: 1px solid #000;
     width: 250px;
+    font-size: 22px;
+}
+
+.me-6 {
+    margin-right: 10%;
 }
 
 .under__line-second {
     margin-top: 60px;
     border-bottom: 1px solid #000;
     width: 640px;
+    font-size: 22px;
+}
+
+.under__line-green {
+    margin-top: 50px;
+    border-bottom: 1px solid #00af00;
+    width: 100%;
+    font-size: 22px;
 }
 
 .border__green {
