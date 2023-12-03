@@ -69,37 +69,37 @@
                             <p class="text__under text__bold-green">
                                 клиника:
                             </p>
-                            <div class="ms-3 mt-0 mb-2 under__line-green">asd</div>
+                            <div class="ms-3 mt-0 mb-2 under__line-green"><?=$generalNameOfHospital?></div>
                         </div>
 
                         <div class="d-flex align-items-end">
                             <p class="text__under text__bold-green mt-3">
                                 Дата:
                             </p>
-                            <div class="ms-3 mt-0 mb-2 under__line-green">asd</div>
+                            <div class="ms-3 mt-0 mb-2 under__line-green"><?=$generalDate?></div>
                         </div>
                         <div class="d-flex align-items-end">
                             <p class="text__under text__bold-green mt-3">
                                 Врач:
                             </p>
-                            <div class="ms-3 mt-0 mb-2 under__line-green">asd</div>
+                            <div class="ms-3 mt-0 mb-2 under__line-green"><?=$generalNameDoctor?></div>
                         </div>
                         <div class="d-flex text-nowrap align-items-end">
                             <p class="text__under text__bold-green mt-3">
                                 ФИО пациента:
                             </p>
-                            <div class="ms-3 mt-0 mb-2 under__line-green">asd</div>
+                            <div class="ms-3 mt-0 mb-2 under__line-green"><?=$generalFIOPatient?></div>
                         </div>
 
                         <div class="d-flex text-nowrap align-items-end">
                             <div class="me-6">
                                 <label class="label__text text__bold-green ms-0 mt-3" for="M">М</label>
-                                <input class="me-3" type="checkbox" id="M" value="Под пилотное сверлени">
+                                <input class="me-3" type="checkbox" id="M" value="Под пилотное сверлени" <?= $sex === "M" ? "checked" : ""?>>
 
                                 <label class="label__text text__bold-green" for="pilot">Ж</label>
-                                <input type="checkbox" id="W" value="Под пилотное сверлени">
+                                <input type="checkbox" id="W" value="Под пилотное сверлени" <?= $sex === "W" ? "checked" : ""?>>
                             </div>
-                            <div class="ms-3 mt-0 mb-2 under__line-green">asd</div>
+                            <div class="ms-3 mt-0 mb-2 under__line-green"></div>
                         </div>
 
                     </div>
@@ -132,21 +132,21 @@
                             <input type="checkbox" id="other" value="other">
                             <label class="label__text mt-3 ms-4" for="3d">Другое</label>
                         </div>
-                        <div class="ms-3 mt-2 mb-2 w-100 under__line-second">asd</div>
+                        <div class="ms-3 mt-2 mb-2 w-100 under__line-second"></div>
                     </div>
 
 
                     <h3 class="group__title mt-4"> 5. КЛКТ отправлено на:</h3>
                     <div>
-                        <input type="checkbox" id="other" value="other">
+                        <input type="checkbox" id="other" value="other" <?= $photo === "emailPhoto" ? "checked" : ""?>>
                         <label class="label__text mt-3" for="3d">ds-st@ds-lab.ru</label>
                     </div>
                     <div class="d-flex align-items-end text-nowrap">
                         <div>
-                            <input type="checkbox" id="other" value="other">
+                            <input type="checkbox" id="other" value="other" <?= $photo !== "emailPhoto" ? "checked" : ""?>>
                             <label class="label__text mt-3 ms-4" for="3d">Другое</label>
                         </div>
-                        <div class="ms-3 mt-2 mb-2 w-100 under__line-second">asd</div>
+                        <div class="ms-3 mt-2 mb-2 w-100 under__line-second"><?= $messagePhoto?></div>
                     </div>
                 </div>
             </div>
@@ -198,14 +198,14 @@
             </div>
         </div>
         <div class="order__group-fourth">
-            <p class="under__line-green mt-3"></p>
-            <p class="under__line-green"></p>
-            <p class="under__line-green"></p>
-            <p class="under__line-green"></p>
-            <p class="under__line-green"></p>
-            <p class="under__line-green"></p>
-            <p class="under__line-green"></p>
-            <p class="under__line-green"></p>
+            <p class="under__line-green mt-3"><?= $comments1?></p>
+            <p class="under__line-green <?=$comments2 !== "" ? 'mt-3' : ''?>"><?= $comments2?></p>
+            <p class="under__line-green <?=$comments3 !== "" ? 'mt-3' : ''?>"><?= $comments3?></p>
+            <p class="under__line-green <?=$comments4 !== "" ? 'mt-3' : ''?>"><?= $comments4?></p>
+            <p class="under__line-green <?=$comments5 !== "" ? 'mt-3' : ''?>"><?= $comments5?></p>
+            <p class="under__line-green <?=$comments6 !== "" ? 'mt-3' : ''?>"><?= $comments6?></p>
+            <p class="under__line-green <?=$comments7 !== "" ? 'mt-3' : ''?>"><?= $comments7?></p>
+            <p class="under__line-green <?=$comments8 !== "" ? 'mt-3' : ''?>"><?= $comments8?></p>
             <div class="d-flex justify-content-center">
                 <h2 class="me-5  mt-3">8 800 700-77-09 </h2>
                 <h2 class="mt-3 order_title"><a class="text-reset" href="#">www.ds-lab.ru</a></h2>

@@ -262,19 +262,19 @@
                                     <label for="photo_email">Отправлены на foto@ds-lab.ru</label>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="radio" name="photo" id="photo_whatsapp" value="whatsappPhoto">
+                                    <input type="radio" name="photo" id="photo_whatsapp" value="Отправлены на WhatsApp/Viber">
                                     <label for="photo_whatsapp">Отправлены на WhatsApp/Viber</label>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <input type="radio" name="photo" id="photo_file" value="filePhoto">
+                                        <input type="radio" name="photo" id="photo_file" value="Прикреплены к форме">
                                         <label for="photo_file">Прикреплены к форме</label>
                                     </div>
-                                    <input type="file" name="photo" multiple>
+                                    <input type="file" name="photo_file" multiple>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <input type="radio" name="photo" id="photo_other" value="otherPhoto">
+                                        <input type="radio" name="photo" id="photo_other" value="Ссылка на фото">
                                         <label for="photo_other">Другое</label>
                                     </div>
                                     <input type="text" class="form-control_bg-white" name="photo_url" placeholder="Источник фото">
