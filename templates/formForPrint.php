@@ -9,15 +9,156 @@
     <link rel="stylesheet" href="/styles/formForPrint.css">
     <link rel="stylesheet" href="/styles/fonts.css">
     <title></title>
+    <style media="print">
+        @media print {
+            .container {
+                margin: 0 auto;
+                padding: 0;
+                width: 210mm;
+                height: 297mm;
+            }
+
+            .logo-img {
+                width: 40mm;
+                height: 8mm;
+            }
+
+            .order_title {
+                font-weight: bold;
+                color: #00af00;
+                display: inline-block;
+                font-size: 3.5mm;
+                margin-top: 10px;
+            }
+
+            .group__title {
+                color: #000;
+                font-size: 3mm;
+            }
+
+            .label__text {
+                margin-left: 0;
+                color: #000;
+                font-size: 2mm;
+            }
+
+            input[type="checkbox"] {
+                height: 2mm;
+                width: 2mm;
+                color: #000;
+            }
+
+            .text__under {
+                font-size: 2mm;
+                color: #000;
+                margin-bottom: 0;
+            }
+
+            .text__bold-green {
+                color: #00af00;
+                font-weight: bold;
+                font-size: 3mm;
+            }
+
+            .under__line-first {
+                margin-top: 6mm;
+                border-bottom: 1px solid #000;
+                width: 40mm;
+                font-size: 3mm;
+            }
+
+            .me-6 {
+                margin-right: 10%;
+            }
+
+            .under__line-second {
+                margin-top: 6mm;
+                border-bottom: 1px solid #000;
+                width: 64mm;
+                font-size: 3mm;
+            }
+
+            .under__line-second .under__line-second-print {
+                padding-top: 50px;
+                border-bottom: 1px solid #000;
+                width: 64mm;
+                font-size: 3mm;
+            }
+
+
+            .under__line-green {
+                margin-top: 5mm;
+                border-bottom: 1px solid #00af00;
+                width: 100%;
+                font-size: 3mm;
+            }
+
+
+            .border__green {
+                border: 2px solid #00af00;
+            }
+
+            .bottom__border-write {
+                border-bottom: 1px solid #00af00;
+            }
+
+
+            .top-margin {
+                margin-top: 5mm;
+            }
+
+            .top-margin-4mm {
+                margin-top: 4mm;
+            }
+
+            .phone_number {
+                font-size: 3mm;
+            }
+
+            .other-left-m {
+                margin-left: 0;
+            }
+
+            .teeth-img1 {
+                width: 80mm;
+                height: 45mm;
+            }
+
+            .teeth-img2 {
+                width: 63mm;
+                height: 30mm;
+            }
+
+            .checkbox-underpilot-wrapping {
+                text-wrap: none;
+            }
+
+            .top-margin-3mm {
+                margin-top: 3mm;
+            }
+
+            .print-margin-label7 {
+                margin-top: 3mm;
+            }
+
+            .width-print-lines1 {
+                width: 30mm;
+            }
+
+            .correct-margin-lines1 {
+                margin-top: 10mm;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-8">
+            <div class="col-8 text-nowrap">
                 <h2 class="order_title">заказ наряд на выполнение хирургического шаблона</h2>
             </div>
-            <div class="col mt-3">
-                <img src="/assets/logo.png" alt="" width="400" height="80">
+            <div class="col mt-3 d-flex justify-content-end">
+                <img class="logo-img" src="/assets/logo.png" alt="">
             </div>
         </div>
 
@@ -31,8 +172,8 @@
 
                         <p class="mt-3 text__under">Название хирургического<br> набора</p>
 
-                        <p class="under__line-first"></p>
-                        <p class="under__line-first"></p>
+                        <p class="under__line-first width-print-lines1"></p>
+                        <p class="under__line-first width-print-lines1"></p>
                     </div>
                     <div class="mt-5">
                         <h3 class="group__title">2. Система имплантов</h3>
@@ -44,19 +185,19 @@
                 <div class="mt-3 col-3">
                     <div>
                         <input type="checkbox" id="pilot" value="Под пилотное сверлени">
-                        <label class="label__text" for="pilot">Под пилотное сверление</label>
+                        <label class="label__text checkbox-underpilot-wrapping" for="pilot">Под пилотное сверление</label>
 
                         <div class="d-flex align-items-end">
-                            <p class="mt-4 text__under text-nowrap">Диаметр сверла</p>
-                            <div class="ms-3 mt-0 mb-2 under__line-second"></div>
+                            <p class="text__under text-nowrap top-margin-3mm">Диаметр сверла</p>
+                            <div class="ms-3 mb-1 mt-0 under__line-second"></div>
                         </div>
                         <div class="d-flex align-items-end">
-                            <p class="mt-5 text__under text-nowrap">Длина сверла</p>
-                            <div class="ms-3 mt-0 mb-2 under__line-second"></div>
+                            <p class="top-margin text__under text-nowrap">Длина сверла</p>
+                            <div class="ms-3 mb-1 mt-0 under__line-second"></div>
                         </div>
                         <div class="d-flex align-items-end">
-                            <p class="mt-5 text__under text-nowrap">Стопор</p>
-                            <div class="ms-3 mt-0 mb-2 under__line-second"></div>
+                            <p class="top-margin text__under text-nowrap">Стопор</p>
+                            <div class="ms-3 mb-1 mt-0 under__line-second"></div>
                         </div>
                     </div>
                 </div>
@@ -111,26 +252,26 @@
             <div class="row">
                 <div class="col-6">
                     <h3 class="group__title mt-4">3. Схема имплантации</h3>
-                    <img class="mt-3" src="/assets/schema@2x.png" alt="">
+                    <img class="teeth-img1" src="/assets/schema@2x.png" alt="">
                 </div>
                 <div class="ms-5 col">
                     <h3 class="group__title mt-4"> 4. Расстановка и согласование</h3>
                     <div>
                         <input type="checkbox" id="3d" value="3D Diagnosis">
-                        <label class="label__text mt-3" for="3d">3D Diagnosis</label>
+                        <label class="label__text top-margin-3mm" for="3d">3D Diagnosis</label>
                     </div>
                     <div>
                         <input type="checkbox" id="blueSky" value="BlueSky">
-                        <label class="label__text mt-3" for="3d">Blue Sky</label>
+                        <label class="label__text top-margin-3mm" for="3d">Blue Sky</label>
                     </div>
                     <div>
                         <input type="checkbox" id="reaiGuide" value="ReaiGuide">
-                        <label class="label__text mt-3" for="reaiGuide">Reai Guide</label>
+                        <label class="label__text top-margin-3mm" for="reaiGuide">Reai Guide</label>
                     </div>
                     <div class="d-flex align-items-end text-nowrap">
                         <div>
                             <input type="checkbox" id="other" value="other">
-                            <label class="label__text mt-3 ms-4" for="3d">Другое</label>
+                            <label class="label__text top-margin-3mm other-left-m" for="3d">Другое</label>
                         </div>
                         <div class="ms-3 mt-2 mb-2 w-100 under__line-second"></div>
                     </div>
@@ -139,12 +280,12 @@
                     <h3 class="group__title mt-4"> 5. КЛКТ отправлено на:</h3>
                     <div>
                         <input type="checkbox" id="other" value="other" <?= $photo === "emailPhoto" ? "checked" : ""?>>
-                        <label class="label__text mt-3" for="3d">ds-st@ds-lab.ru</label>
+                        <label class="label__text top-margin-3mm" for="3d">ds-st@ds-lab.ru</label>
                     </div>
                     <div class="d-flex align-items-end text-nowrap">
                         <div>
                             <input type="checkbox" id="other" value="other" <?= $photo !== "emailPhoto" ? "checked" : ""?>>
-                            <label class="label__text mt-3 ms-4" for="3d">Другое</label>
+                            <label class="label__text top-margin-3mm other-left-m" for="3d">Другое</label>
                         </div>
                         <div class="ms-3 mt-2 mb-2 w-100 under__line-second"><?= $messagePhoto?></div>
                     </div>
@@ -158,22 +299,22 @@
                     <h3 class="group__title mt-4">6. Хирургические пины</h3>
                     <div>
                         <div class="d-flex text-nowrap align-items-end me-5">
-                            <p class="text__under mt-4">Количество</p>
-                            <div class="ms-3 mt-0 mb-2 under__line-second">asd</div>
+                            <p class="text__under top-margin-4mm">Количество</p>
+                            <div class="ms-3 mt-0 mb-1 under__line-second under__line-second-print">asd</div>
                         </div>
                         <div class="d-flex text-nowrap align-items-end me-5">
-                            <p class="text__under mt-4">Диаметр</p>
-                            <div class="ms-3 mt-0 mb-2 under__line-second">asd</div>
+                            <p class="text__under top-margin-4mm">Диаметр</p>
+                            <div class="ms-3 mt-0 mb-1 under__line-second under__line-second-print">asd</div>
                         </div>
                         <div class="d-flex text-nowrap align-items-end me-5">
-                            <p class="text__under mt-4">Длина</p>
-                            <div class="ms-3 mt-0 mb-2 under__line-second">asd</div>
+                            <p class="text__under top-margin-4mm">Длина</p>
+                            <div class="ms-3 mt-0 mb-1 under__line-second under__line-second-print">asd</div>
                         </div>
                     </div>
-                    <h3 class="group__title mt-4">8. Временные коронки</br> (немедленное протезирование)</h3>
+                    <h3 class="group__title top-margin-4mm">8. Временные коронки</br> (немедленное протезирование)</h3>
                     <div class="d-flex text-nowrap align-items-end">
-                        <p class="text__under mt-4">Цвет</p>
-                        <div class="ms-3 mt-0 mb-2 under__line-second">asd</div>
+                        <p class="text__under top-margin-4mm">Цвет</p>
+                        <div class="ms-3 mt-0 mb-1 under__line-second">asd</div>
                     </div>
                     <h2 class="order_title text-uppercase mt-5">комментарии к работе:</h2>
                 </div>
@@ -181,18 +322,18 @@
                     <h3 class="group__title mt-4">7. Дополнительные шаблоны</h3>
                     <div>
                         <input type="checkbox" id="other" value="other">
-                        <label class="label__text mt-4" for="3d">Для редуцирования костной ткани</label>
+                        <label class="label__text top-margin-4mm print-margin-label7" for="3d">Для редуцирования костной ткани</label>
                     </div>
                     <div>
                         <input type="checkbox" id="other" value="other">
-                        <label class="label__text mt-4" for="3d">Позиционер для временных коронок</label>
+                        <label class="label__text top-margin-4mm print-margin-label7" for="3d">Позиционер для временных коронок</label>
                     </div>
                     <div>
                         <input type="checkbox" id="other" value="other">
-                        <label class="label__text mt-4" for="3d">Шаблон-Ложка-Прикус</label>
+                        <label class="label__text top-margin-4mm print-margin-label7" for="3d">Шаблон-Ложка-Прикус</label>
                     </div>
                     <div class="">
-                        <img class="mt-3 ms-5" src="/assets/schema@2x.png" alt="">
+                        <img class="top-margin-3mm ms-5 teeth-img2" src="/assets/schema@2x.png" alt="">
                     </div>
                 </div>
             </div>
@@ -206,10 +347,6 @@
             <p class="under__line-green <?=$comments6 !== "" ? 'mt-3' : ''?>"><?= $comments6?></p>
             <p class="under__line-green <?=$comments7 !== "" ? 'mt-3' : ''?>"><?= $comments7?></p>
             <p class="under__line-green <?=$comments8 !== "" ? 'mt-3' : ''?>"><?= $comments8?></p>
-            <div class="d-flex justify-content-center">
-                <h2 class="me-5  mt-3">8 800 700-77-09 </h2>
-                <h2 class="mt-3 order_title"><a class="text-reset" href="#">www.ds-lab.ru</a></h2>
-            </div>
         </div>
     </div>
 </body>

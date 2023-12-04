@@ -16,7 +16,13 @@ a {
 }
 
 .container {
-    margin: 5%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.logo-img {
+    width: 400px;
+    height: 80px;
 }
 
 .order_title {
@@ -85,3 +91,20 @@ input[type="checkbox"] {
 .bottom__border-write {
     border-bottom: 1px solid #00af00;
 }
+
+.top-margin {
+    margin-top: 50px;
+}
+
+.top-margin-4mm {
+    margin-top: 40px;
+}
+
+.other-left-m {
+    margin-left: 20px;
+}
+
+.top-margin-3mm {
+    margin-top: 15px;
+}
+
