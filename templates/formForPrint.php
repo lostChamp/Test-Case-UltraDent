@@ -79,7 +79,7 @@
             }
 
             .under__line-second .under__line-second-print {
-                padding-top: 50px;
+                padding-top: 6mm;
                 border-bottom: 1px solid #000;
                 width: 64mm;
                 font-size: 3mm;
@@ -147,6 +147,35 @@
 
             .correct-margin-lines1 {
                 margin-top: 10mm;
+            }
+
+            .under__line-third {
+                margin-top: 6mm;
+                border-bottom: 1px solid #000;
+                width: 45mm;
+                font-size: 3mm;
+            }
+
+            input[type="radio"] {
+                height:2mm;
+                width:2mm;
+            }
+
+            .shape__des-item, .shape__prom-item, .shape-item {
+                width: 4mm;
+                height: 4mm;
+                cursor: pointer;
+                display: block;
+            }
+
+            .shape {
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            .margin-top-print0 {
+                margin-top: 0;
             }
         }
     </style>
@@ -237,62 +266,168 @@
 
 
                     <h3 class="group__title mt-4">5. Материал:</h3>
-                    <div>
-                        <input type="checkbox" id="other" value="other" <?= $photo === "emailPhoto" ? "checked" : ""?>>
-                        <label class="label__text top-margin-3mm" for="3d">ds-st@ds-lab.ru</label>
-                    </div>
-                    <div class="d-flex align-items-end text-nowrap">
-                        <div>
-                            <input type="checkbox" id="other" value="other" <?= $photo !== "emailPhoto" ? "checked" : ""?>>
-                            <label class="label__text top-margin-3mm other-left-m" for="3d">Другое</label>
+                    <div class="row">
+                        <div class="col-4">
+                            <input type="checkbox">
+                            <label class="label__text me-1 ms-0 top-margin-3mm" for="">Co-Cr</label>
                         </div>
-                        <div class="ms-3 mt-2 mb-2 w-100 under__line-second"><?= $messagePhoto?></div>
+                        <div class="col-4">
+                            <input type="checkbox">
+                            <label class="label__text ms-0 top-margin-3mm" for="">ZrO²</label>
+                        </div>
+                        <div class="col-4 p-0">
+                            <input type="checkbox">
+                            <label class="label__text ms-0 top-margin-3mm" for="">Prettau</label>
+                        </div>
+                        <div class="col-4">
+                            <input type="checkbox">
+                            <label class="label__text me-1 ms-0 top-margin-3mm" for="">E-max</label>
+                        </div>
+                        <div class="col-4">
+                            <input type="checkbox">
+                            <label class="label__text ms-0 top-margin-3mm" for="">Ti</label>
+                        </div>
+                        <div class="col-4 p-0">
+                            <input type="checkbox">
+                            <label class="label__text ms-0 top-margin-3mm" for="">Акрил/РММА</label>
+                        </div>
+                        <div class="col-4">
+                            <input type="checkbox">
+                            <label class="label__text me-1 ms-0 top-margin-3mm" for="">Композит</label>
+                        </div>
+                        <div class="col-4">
+                            <input type="checkbox">
+                            <label class="label__text ms-0 top-margin-3mm" for="">Acry Free</label>
+                        </div>
+                        <div class="col-4 p-0">
+                            <input type="checkbox">
+                            <label class="label__text ms-0 top-margin-3mm" for="">Нейлон</label>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
+
         <div class="order__group-third mt-3">
             <div class="row">
                 <div class="col-5 p-0 m-0">
-                    <h3 class="group__title mt-4">6. Хирургические пины</h3>
-                    <div>
-                        <div class="d-flex text-nowrap align-items-end me-5">
-                            <p class="text__under top-margin-4mm">Количество</p>
-                            <div class="ms-3 mt-0 mb-1 under__line-second under__line-second-print">asd</div>
-                        </div>
-                        <div class="d-flex text-nowrap align-items-end me-5">
-                            <p class="text__under top-margin-4mm">Диаметр</p>
-                            <div class="ms-3 mt-0 mb-1 under__line-second under__line-second-print">asd</div>
-                        </div>
-                        <div class="d-flex text-nowrap align-items-end me-5">
-                            <p class="text__under top-margin-4mm">Длина</p>
-                            <div class="ms-3 mt-0 mb-1 under__line-second under__line-second-print">asd</div>
-                        </div>
-                    </div>
-                    <h3 class="group__title top-margin-4mm">8. Временные коронки</br> (немедленное протезирование)</h3>
+                    <h3 class="group__title mt-4">6. Цвет зубов - боковая группа</h3>
                     <div class="d-flex text-nowrap align-items-end">
                         <p class="text__under top-margin-4mm">Цвет</p>
                         <div class="ms-3 mt-0 mb-1 under__line-second">asd</div>
                     </div>
+
+                    <div>
+                        <h3 class="group__title mt-4">7. Цвет зубов - передняя группа</h3>
+                        <div class="d-flex text-nowrap align-items-end">
+                            <p class="text__under top-margin-4mm">Верхняя треть</p>
+                            <div class="ms-3 mt-0 mb-1 under__line-third">asd</div>
+                        </div>
+                        <div class="d-flex text-nowrap align-items-end">
+                            <p class="text__under top-margin-4mm">Средняя треть</p>
+                            <div class="ms-3 mt-0 mb-1 under__line-third">asd</div>
+                        </div>
+                        <div class="d-flex text-nowrap align-items-end">
+                            <p class="text__under top-margin-4mm">Нижняя треть</p>
+                            <div class="ms-3 mt-0 mb-1 under__line-third">asd</div>
+                        </div>
+                    </div>
+
+                    <h3 class="group__title top-margin-4mm">8. Режущий край</h3>
+                    <div class="row">
+                        <div class="col-4">
+                            <input type="radio" name="sharpEdge" id="sharpEdgeWhite" value="white">
+                            <label class="label__text" for="sharpEdgeWhite">Беловатый</label>
+                        </div>
+                        <div class="col-4 p-0">
+                            <input type="radio"  name="sharpEdge" id="sharpEdgeBlue" value="blue">
+                            <label class="label__text" for="sharpEdgeBlue">Голубоватый</label>
+                        </div>
+                        <div class="col-4 p-0">
+                            <input type="radio" name="sharpEdge" id="sharpEdgeGray" value="gray">
+                            <label class="label__text" for="sharpEdgeGray">Беловатый</label>
+                        </div>
+                        <div class="col d-flex text-nowrap align-items-end">
+                            <p class="text__under top-margin-4mm">Свое значение</p>
+                            <div class="ms-3 mt-0 mb-1 under__line-third">asd</div>
+                        </div>
+                    </div>
+
+                    <h3 class="group__title mt-4">9. Цвет культи</h3>
+                    <div class="d-flex text-nowrap align-items-end">
+                        <p class="text__under top-margin-4mm">Цвет</p>
+                        <div class="ms-3 mt-0 mb-1 under__line-second under__line-second-print">asd</div>
+                    </div>
                     <h2 class="order_title text-uppercase mt-5">комментарии к работе:</h2>
                 </div>
-                <div class="col ms-3">
-                    <h3 class="group__title mt-4">7. Дополнительные шаблоны</h3>
-                    <div>
-                        <input type="checkbox" id="other" value="other">
-                        <label class="label__text top-margin-4mm print-margin-label7" for="3d">Для редуцирования костной ткани</label>
+
+                <div class="col-6 ms-4 pe-0">
+                    <h3 class="group__title mt-3">10. Цвет зубов - передняя группа</h3>
+                    <div class="row ms-3">
+                        <div class="col-3">
+                            <input type="radio" name="shapeTooth" id="shape__first" value="triangle">
+                            <label for="shape__first" class="shape shape-item" style="background-image: url('../assets/shape-1.svg')"></label>
+                        </div>
+                        <div class="col-3 p-0">
+                            <input type="radio" name="shapeTooth" id="shape__second" value="circle">
+                            <label for="shape__second" class="shape shape-item" style="background-image: url('../assets/shape-2.svg')"></label>
+                        </div>
+                        <div class="col-3 p-0">
+                            <input type="radio" name="shapeTooth" id="shape__third" value="square">
+                            <label for="shape__third" class="shape shape-item shape-item" style="background-image: url('../assets/shape-3.svg')"></label>
+                        </div>
                     </div>
-                    <div>
-                        <input type="checkbox" id="other" value="other">
-                        <label class="label__text top-margin-4mm print-margin-label7" for="3d">Позиционер для временных коронок</label>
+                    <h3 class="group__title">11. Форма промывного пространства</h3>
+                    <div class="row ms-3">
+                        <div class="col-3">
+                            <input type="radio" name="shapeProm" id="shape__prom-first" value="prom-1">
+                            <label for="shape__prom-first" class="shape shape__prom-item" style="background-image: url('/assets/shape-prom-1.svg')"></label>
+                        </div>
+                        <div class="col-3">
+                            <input type="radio" name="shapeProm" id="shape__prom-second" value="prom-2">
+                            <label for="shape__prom-second" class="shape shape__prom-item" style="background-image: url('/assets/shape-prom-2.svg')"></label>
+                        </div>
+                        <div class="col-3">
+                            <input type="radio" name="shapeProm" id="shape__prom-third" value="prom-3">
+                            <label for="shape__prom-third" class="shape shape__prom-item" style="background-image: url('/assets/shape-prom-3.svg')"></label>
+                        </div>
                     </div>
-                    <div>
-                        <input type="checkbox" id="other" value="other">
-                        <label class="label__text top-margin-4mm print-margin-label7" for="3d">Шаблон-Ложка-Прикус</label>
+                    <h3 class="group__title">12. Контур формирования десеневого края</h3>
+                    <div class="row ms-3">
+                        <div class="col-3">
+                            <input type="radio" name="shapeDes" id="shape__des-first" value="des-1">
+                            <label for="shape__des-first" class="shape shape__des-item" style="background-image: url('/assets/shape-des-1.svg')"></label>
+                        </div>
+                        <div class="col-3">
+                            <input type="radio" name="shapeDes" id="shape__des-second" value="des-2">
+                            <label for="shape__des-second" class="shape shape__des-item" style="background-image: url('/assets/shape-des-2.svg')"></label>
+                        </div>
+                        <div class="col-3">
+                            <input type="radio" name="shapeDes" id="shape__des-third" value="des-3">
+                            <label for="shape__des-third" class="shape shape__des-item" style="background-image: url('/assets/shape-des-3.svg')"></label>
+                        </div>
                     </div>
-                    <div class="">
-                        <img class="top-margin-3mm ms-5 teeth-img2" src="/assets/schema@2x.png" alt="">
+                    <h3 class="group__title">13. Фотографии</h3>
+                    <div class="row">
+                        <div class="col-6">
+                            <input type="radio" name="photo" id="photo_email" value="emailPhoto">
+                            <label for="photo_email" class="text__under mt-2">Отправлены на foto@ds-lab.ru</label>
+                        </div>
+                        <div class="col-6">
+                            <input type="radio" name="photo" id="photo_whatsapp" value="Отправлены на WhatsApp/Viber">
+                            <label for="photo_whatsapp" class="text__under mt-2">Отправлены на WhatsApp/Viber</label>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <input type="radio" name="photo" id="photo_file" value="Прикреплены к форме">
+                                <label for="photo_file" class="text__under mt-3">Прикреплены к форме</label>
+                            </div>
+                        </div>
+                        <div class="d-flex text-nowrap align-items-end">
+                            <p class="text__under">Другой вариант</p>
+                            <div class="ms-3 mt-0 mb-1 under__line-second under__line-second-print">asd</div>
+                        </div>
                     </div>
                 </div>
             </div>

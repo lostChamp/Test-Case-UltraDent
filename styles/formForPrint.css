@@ -77,6 +77,13 @@ input[type="checkbox"] {
     font-size: 22px;
 }
 
+.under__line-third {
+    margin-top: 60px;
+    border-bottom: 1px solid #000;
+    width: 450px;
+    font-size: 22px;
+}
+
 .under__line-green {
     margin-top: 50px;
     border-bottom: 1px solid #00af00;
@@ -106,5 +113,18 @@ input[type="checkbox"] {
 
 .top-margin-3mm {
     margin-top: 15px;
+}
+
+.shape__des-item, .shape__prom-item, .shape-item {
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+    display: block;
+}
+
+.shape {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 

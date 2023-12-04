@@ -16,26 +16,29 @@ require_once("helpers.php");
 
 // Реализация переноса не особо нравится
 
-$maxLenForCommentString = 126;
-$commentsLen = strlen($_POST["comments"]);
-$separateForComments = [];
-$currentOffset = 0;
+if(isset($_POST["comments"])) {
+    $maxLenForCommentString = 126;
+    $commentsLen = strlen($_POST["comments"]);
+    $separateForComments = [];
+    $currentOffset = 0;
 
-if($commentsLen > 126) {
-    $numberCommentsLine = (int)round($commentsLen / $maxLenForCommentString);
-    $i = 1;
-    while($i <= $numberCommentsLine) {
-        $str = substr($_POST["comments"], $currentOffset, $maxLenForCommentString);
-        $separateForComments["comments" . $i] = $str;
-        $currentOffset += $maxLenForCommentString;
-        $i++;
+    if($commentsLen > 126) {
+        $numberCommentsLine = (int)round($commentsLen / $maxLenForCommentString);
+        $i = 1;
+        while($i <= $numberCommentsLine) {
+            $str = substr($_POST["comments"], $currentOffset, $maxLenForCommentString);
+            $separateForComments["comments" . $i] = $str;
+            $currentOffset += $maxLenForCommentString;
+            $i++;
+        }
+        $separateForComments["comments" . $i++] = substr($_POST["comments"], $currentOffset);
+    }else {
+        $separateForComments["comments1"] = $_POST["comments"];
     }
-    $separateForComments["comments" . $i++] = substr($_POST["comments"], $currentOffset);
-}else {
-    $separateForComments["comments1"] = $_POST["comments"];
 }
 
-if($_POST["photo"] !== "emailPhoto") {
+
+if(isset($_POST["photo"]) && $_POST["photo"] !== "emailPhoto") {
     $message = $_POST["photo"];
 }
 
@@ -45,7 +48,7 @@ $formForPrint = include_template("formForPrint.php", [
     "generalNameDoctor" => $_POST["generalNameDoctor"] ?? "",
     "generalFIOPatient" => $_POST["generalFIOPatient"] ?? "",
     "sex" => $_POST["sex"] ?? "",
-    "photo" => $_POST["photo"],
+    "photo" => $_POST["photo"] ?? "",
     "messagePhoto" => $message ?? "",
     "comments1" => $separateForComments["comments1"] ?? "",
     "comments2" => $separateForComments["comments2"] ?? "",
