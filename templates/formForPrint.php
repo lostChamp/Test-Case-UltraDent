@@ -163,43 +163,13 @@
         </div>
 
         <div class="order__group-first">
-            <h3 class="group__title">1. Схема протезирования:</h3>
+            <h3 class="group__title">1. Виды работ:</h3>
             <div class="row">
-                <div class="mt-3 col-3">
-                    <div>
-                        <input type="checkbox" id="fullProtocol" value="Полный протокол">
-                        <label class="label__text" for="fullProtocol">Полный протокол</label>
+                <div class="mt-6 col-3">
 
-                        <p class="mt-3 text__under">Название хирургического<br> набора</p>
-
-                        <p class="under__line-first width-print-lines1"></p>
-                        <p class="under__line-first width-print-lines1"></p>
-                    </div>
-                    <div class="mt-5">
-                        <h3 class="group__title">2. Система имплантов</h3>
-
-                        <p class="under__line-second">asdasd</p>
-                        <p class="under__line-second"></p>
-                    </div>
                 </div>
-                <div class="mt-3 col-3">
-                    <div>
-                        <input type="checkbox" id="pilot" value="Под пилотное сверлени">
-                        <label class="label__text checkbox-underpilot-wrapping" for="pilot">Под пилотное сверление</label>
+                <div class="col-3">
 
-                        <div class="d-flex align-items-end">
-                            <p class="text__under text-nowrap top-margin-3mm">Диаметр сверла</p>
-                            <div class="ms-3 mb-1 mt-0 under__line-second"></div>
-                        </div>
-                        <div class="d-flex align-items-end">
-                            <p class="top-margin text__under text-nowrap">Длина сверла</p>
-                            <div class="ms-3 mb-1 mt-0 under__line-second"></div>
-                        </div>
-                        <div class="d-flex align-items-end">
-                            <p class="top-margin text__under text-nowrap">Стопор</p>
-                            <div class="ms-3 mb-1 mt-0 under__line-second"></div>
-                        </div>
-                    </div>
                 </div>
                 <div class="col mt-3 ms-3">
                     <div>
@@ -251,33 +221,22 @@
         <div class="order__group-second">
             <div class="row">
                 <div class="col-6">
-                    <h3 class="group__title mt-4">3. Схема имплантации</h3>
+                    <h3 class="group__title mt-4">3. Схема протезирования</h3>
                     <img class="teeth-img1" src="/assets/schema@2x.png" alt="">
                 </div>
                 <div class="ms-5 col">
-                    <h3 class="group__title mt-4"> 4. Расстановка и согласование</h3>
+                    <h3 class="group__title mt-4"> 4. Оттиски</h3>
                     <div>
                         <input type="checkbox" id="3d" value="3D Diagnosis">
-                        <label class="label__text top-margin-3mm" for="3d">3D Diagnosis</label>
+                        <label class="label__text top-margin-3mm" for="3d">Аналоговые</label>
                     </div>
                     <div>
                         <input type="checkbox" id="blueSky" value="BlueSky">
-                        <label class="label__text top-margin-3mm" for="3d">Blue Sky</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="reaiGuide" value="ReaiGuide">
-                        <label class="label__text top-margin-3mm" for="reaiGuide">Reai Guide</label>
-                    </div>
-                    <div class="d-flex align-items-end text-nowrap">
-                        <div>
-                            <input type="checkbox" id="other" value="other">
-                            <label class="label__text top-margin-3mm other-left-m" for="3d">Другое</label>
-                        </div>
-                        <div class="ms-3 mt-2 mb-2 w-100 under__line-second"></div>
+                        <label class="label__text top-margin-3mm" for="3d">Цифровые</label>
                     </div>
 
 
-                    <h3 class="group__title mt-4"> 5. КЛКТ отправлено на:</h3>
+                    <h3 class="group__title mt-4">5. Материал:</h3>
                     <div>
                         <input type="checkbox" id="other" value="other" <?= $photo === "emailPhoto" ? "checked" : ""?>>
                         <label class="label__text top-margin-3mm" for="3d">ds-st@ds-lab.ru</label>
