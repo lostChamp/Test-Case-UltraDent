@@ -128,3 +128,445 @@ input[type="checkbox"] {
     background-size: contain;
 }
 
+.order__form-table  {
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+table {
+    border-spacing: 0;
+    box-sizing: inherit;
+}
+tr {
+    display: table-row;
+}
+
+.work__types > td > input {
+    width: 100%;
+    border: 0;
+}
+.order__form-table th, .order__form-table td {
+    color: #00af00;
+    font-weight: 300;
+    border: 1px solid #83888e;
+    vertical-align: center;
+    padding: 0.5rem;
+}
+
+.tooth-schema {
+    position: relative;
+    display: inline-block;
+}
+
+.tooth-img {
+    vertical-align: bottom;
+}
+
+.tooth-checkboxes {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.tooth {
+    position: absolute;
+}
+
+.tooth__checkbox {
+    display: none;
+}
+
+.tooth__mark {
+    width: 100%;
+    height: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.tooth-link__mark {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.tooth__mark:before {
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: transparent;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -0.5rem 0 0 -0.5rem;
+}
+
+.tooth-link__mark:before {
+    content: "";
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background: #f0f2f3;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -0.375rem 0 0 -0.375rem;
+}
+
+.tooth:nth-child(1) .tooth-link__mark, .tooth:nth-child(2) .tooth-link__mark, .tooth:nth-child(3) .tooth-link__mark {
+    top: -0.5rem;
+    left: 2.4rem;
+}
+
+.tooth:nth-child(1) {
+    top: 79%;
+    left: 1%;
+    width: 2rem;
+    height: 2rem;
+}
+
+.tooth:nth-child(2) {
+    top: 65%;
+    left: 2.5%;
+    width: 2rem;
+    height: 2rem;
+}
+
+.tooth:nth-child(3) {
+    top: 49%;
+    left: 4%;
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.tooth:nth-child(4) {
+    top: 37%;
+    left: 6%;
+    width: 2rem;
+    height: 1.5rem;
+}
+
+.tooth:nth-child(5) {
+    top: 26%;
+    left: 8%;
+    width: 2rem;
+    height: 1.7rem;
+}
+
+.tooth:nth-child(6) {
+    top: 16%;
+    left: 11%;
+    width: 1.8rem;
+    height: 1.7rem;
+}
+
+.tooth:nth-child(7) {
+    top: 10.5%;
+    left: 15.3%;
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+.tooth:nth-child(8) {
+    top: 7.9%;
+    left: 20.3%;
+    width: 1.9rem;
+    height: 1.7rem;
+}
+
+.tooth:nth-child(9) {
+    top: 7.9%;
+    left: 26.3%;
+    width: 1.9rem;
+    height: 1.7rem;
+}
+
+.tooth:nth-child(10) {
+    top: 10.9%;
+    left: 31.3%;
+    width: 1.7rem;
+    height: 1.6rem;
+}
+
+.tooth:nth-child(11) {
+    top: 15.9%;
+    left: 35.4%;
+    width: 1.8rem;
+    height: 1.7rem;
+}
+
+.tooth:nth-child(12) {
+    top: 25.9%;
+    left: 38%;
+    width: 2rem;
+    height: 1.7rem;
+}
+
+.tooth:nth-child(13) {
+    top: 36.5%;
+    left: 40.5%;
+    width: 2rem;
+    height: 1.7rem;
+}
+
+.tooth:nth-child(14) {
+    top: 47.5%;
+    left: 41.5%;
+    width: 2.6rem;
+    height: 2.7rem;
+}
+
+.tooth:nth-child(15) {
+    top: 64%;
+    left: 43.5%;
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.tooth:nth-child(16) {
+    top: 79%;
+    left: 45%;
+    width: 2rem;
+    height: 2rem;
+}
+
+.tooth:nth-child(17) {
+    top: 15.2%;
+    left: 93%;
+    width: 2rem;
+    height: 2.2rem;
+}
+
+.tooth:nth-child(18) {
+    top: 30.2%;
+    left: 90.2%;
+    width: 2.5rem;
+    height: 2.4rem;
+}
+
+.tooth:nth-child(19) {
+    top: 46.2%;
+    left: 88%;
+    width: 2.5rem;
+    height: 2.4rem;
+}
+
+.tooth:nth-child(20) {
+    top: 61.2%;
+    left: 86.5%;
+    width: 2rem;
+    height: 1.7rem;
+}
+
+.tooth:nth-child(21) {
+    top: 71.8%;
+    left: 84.8%;
+    width: 1.8rem;
+    height: 1.5rem;
+}
+
+.tooth:nth-child(22) {
+    top: 78.8%;
+    left: 82%;
+    width: 1.3rem;
+    height: 1.5rem;
+}
+
+.tooth:nth-child(23) {
+    top: 82.8%;
+    left: 78%;
+    width: 1.3rem;
+    height: 1.5rem;
+}
+
+.tooth:nth-child(24) {
+    top: 83.5%;
+    left: 74%;
+    width: 1.3rem;
+    height: 1.5rem;
+}
+
+.tooth:nth-child(25) {
+    top: 83.8%;
+    left: 70.3%;
+    width: 1.3rem;
+    height: 1.5rem;
+}
+
+.tooth:nth-child(26) {
+    top: 83.8%;
+    left: 66.3%;
+    width: 1.3rem;
+    height: 1.5rem;
+}
+
+.tooth:nth-child(27) {
+    top: 79.8%;
+    left: 62.3%;
+    width: 1.3rem;
+    height: 1.5rem;
+}
+
+.tooth:nth-child(28) {
+    top: 71.8%;
+    left: 58.3%;
+    width: 1.7rem;
+    height: 1.5rem;
+}
+
+.tooth:nth-child(29) {
+    top: 61.8%;
+    left: 56.3%;
+    width: 1.9rem;
+    height: 1.7rem;
+}
+
+.tooth:nth-child(30) {
+    top: 45.8%;
+    left: 53.3%;
+    width: 2.5rem;
+    height: 2.7rem;
+}
+
+.tooth:nth-child(31) {
+    top: 29.8%;
+    left: 51.3%;
+    width: 2.3rem;
+    height: 2.7rem;
+}
+
+.tooth:nth-child(32) {
+    top: 14.8%;
+    left: 50%;
+    width: 2rem;
+    height: 2.5rem;
+}
+
+.tooth:nth-child(3) .tooth-link__mark {
+    top: 0;
+    left: 2.3571rem;
+}
+.tooth:nth-child(4) .tooth-link__mark {
+    top: 0;
+    left: 2.3571rem;
+}
+.tooth:nth-child(5) .tooth-link__mark {
+    top: 0.3571rem;
+    left: 2.3571rem;
+}
+.tooth:nth-child(6) .tooth-link__mark {
+    top: 0.8571rem;
+    left: 2.1429rem;
+}
+.tooth:nth-child(7) .tooth-link__mark {
+    top: 1.2143rem;
+    left: 1.6429rem;
+}
+.tooth:nth-child(8) .tooth-link__mark {
+    top: 1.4286rem;
+    left: 1.4286rem;
+}
+.tooth:nth-child(9) .tooth-link__mark {
+    top: 1.7857rem;
+    left: 0.7143rem;
+}
+.tooth:nth-child(10) .tooth-link__mark {
+    top: 1.9286rem;
+    left: 0;
+}
+.tooth:nth-child(11) .tooth-link__mark {
+    top: 1.9286rem;
+    left: -0.7143rem;
+}
+.tooth:nth-child(12) .tooth-link__mark {
+    top: 1.7857rem;
+    left: -0.7857rem;
+}
+.tooth:nth-child(13) .tooth-link__mark {
+    top: 1.7143rem;
+    left: -1.1429rem;
+}
+.tooth:nth-child(14) .tooth-link__mark {
+    top: 2.5714rem;
+    left: -0.9286rem;
+}
+.tooth:nth-child(15) .tooth-link__mark {
+    top: 2.1429rem;
+    left: -1.2143rem;
+}
+.tooth:nth-child(17) .tooth-link__mark {
+    top: 1.2857rem;
+    left: -1.9286rem;
+}
+.tooth:nth-child(18) .tooth-link__mark {
+    top: 1.2857rem;
+    left: -1.5714rem;
+}
+.tooth:nth-child(19) .tooth-link__mark {
+    top: 1.3571rem;
+    left: -1.7143rem;
+}
+.tooth:nth-child(20) .tooth-link__mark {
+    top: 0.3571rem;
+    left: -1.7143rem;
+}
+.tooth:nth-child(21) .tooth-link__mark {
+    top: -0.3571rem;
+    left: -1.7143rem;
+}
+.tooth:nth-child(22) .tooth-link__mark {
+    top: -0.8571rem;
+    left: -1.5714rem;
+}
+.tooth:nth-child(23) .tooth-link__mark {
+    top: -1.2857rem;
+    left: -1.1429rem;
+}
+.tooth:nth-child(24) .tooth-link__mark {
+    top: -1.3571rem;
+    left: -0.9286rem;
+}
+.tooth:nth-child(25) .tooth-link__mark {
+    top: -1.4286rem;
+    left: -0.7143rem;
+}
+.tooth:nth-child(26) .tooth-link__mark {
+    top: -1.7857rem;
+    left: -0.2857rem;
+}
+.tooth:nth-child(27) .tooth-link__mark {
+    top: -1.9286rem;
+    left: 0.3571rem;
+}
+.tooth:nth-child(28) .tooth-link__mark {
+    top: -1.5rem;
+    left: 1.2857rem;
+}
+.tooth:nth-child(29) .tooth-link__mark {
+    top: -1.4286rem;
+    left: 1.5rem;
+}
+.tooth:nth-child(30) .tooth-link__mark {
+    top: -1.5rem;
+    left: 1.7857rem;
+}
+.tooth:nth-child(31) .tooth-link__mark {
+    top: -1.2857rem;
+    left: 1.7857rem;
+}
+
+.tooth__checkbox:checked + .tooth__mark:before {
+    background: #595077;
+}
+
+.tooth__checkbox:checked + .tooth-link__mark:before {
+    background: #595077;
+}
+

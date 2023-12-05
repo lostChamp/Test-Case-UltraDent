@@ -6,15 +6,15 @@ require_once("helpers.php");
 //    foreach ($_POST as $key => $value) {
 //        if (is_array($value)) {
 //            foreach ($value as $elKey => $elValue) {
-//                print $elKey . " = " . $elValue . "</br>";
+//                print $elKey . " = " . gettype($elValue) . "</br>";
 //            }
 //        } else {
 //            print $key . " = " . $value . "</br>";
 //        }
 //    }
 //}
-
 // Реализация переноса не особо нравится
+
 
 if(isset($_POST["comments"])) {
     $maxLenForCommentString = 126;
@@ -38,26 +38,29 @@ if(isset($_POST["comments"])) {
 }
 
 
-if(isset($_POST["photo"]) && $_POST["photo"] !== "emailPhoto") {
-    $message = $_POST["photo"];
-}
-
 $formForPrint = include_template("formForPrint.php", [
     "generalNameOfHospital" => $_POST["generalNameOfHospital"] ?? "",
     "generalDate" => $_POST["generalDate"] ?? "",
     "generalNameDoctor" => $_POST["generalNameDoctor"] ?? "",
     "generalFIOPatient" => $_POST["generalFIOPatient"] ?? "",
     "sex" => $_POST["sex"] ?? "",
-    "photo" => $_POST["photo"] ?? "",
+    "impressions" => $_POST["impressions"] ?? "",
+    "materials" => $_POST["materials"] ?? [],
+    "tooth" => $_POST["tooth"] ?? [],
+    "tooth_link" => $_POST["tooth-link"] ?? [],
+    "sideGroup" => $_POST["sideGroup"] ?? "",
+    "toothColorFrontTop" => $_POST["toothColorFrontTop"] ?? "",
+    "toothColorFrontMiddle" => $_POST["toothColorFrontMiddle"] ?? "",
+    "toothColorFrontBottom" => $_POST["toothColorFrontBottom"] ?? "",
+    "sharpEdge" => $_POST["sharpEdge"] ?? "",
+    "sharpEdgeOther" => $_POST["sharpEdgeOther"] ?? "",
+    "cult" => $_POST["cult"] ?? "",
+    "shapeTooth" => $_POST["shapeTooth"] ?? "",
+    "shapeProm" => $_POST["shapeProm"] ?? "",
+    "shapeDes" => $_POST["shapeDes"] ?? "",
     "messagePhoto" => $message ?? "",
     "comments1" => $separateForComments["comments1"] ?? "",
     "comments2" => $separateForComments["comments2"] ?? "",
-    "comments3" => $separateForComments["comments3"] ?? "",
-    "comments4" => $separateForComments["comments4"] ?? "",
-    "comments5" => $separateForComments["comments5"] ?? "",
-    "comments6" => $separateForComments["comments6"] ?? "",
-    "comments7" => $separateForComments["comments7"] ?? "",
-    "comments8" => $separateForComments["comments8"] ?? "",
 ]);
 
 print $formForPrint;

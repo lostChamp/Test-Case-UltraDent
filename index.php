@@ -150,7 +150,7 @@
                             <div class="order__form-title">6. Цвет зубов - боковая группа</div>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control_bg-white" placeholder="Введите цвет..." >
+                                    <input type="text" name="sideGroup" class="form-control_bg-white" placeholder="Введите цвет..." >
                                 </div>
                                 <div class="col-md-6">
                                     <img src="/assets/color.svg" class="tooth-color-image">
@@ -188,10 +188,10 @@
                                 </div>
                                 <div class="col-md-4">
                                     <input type="radio" name="sharpEdge" id="sharpEdgeGray" value="gray">
-                                    <label for="sharpEdgeGray">Беловатый</label>
+                                    <label for="sharpEdgeGray">Сероватый</label>
                                 </div>
                                 <div class="col-md-4">
-                                    <input type="text" placeholder="Свое значение" class="form-control_bg-white" name="sharpEdge">
+                                    <input type="text" placeholder="Свое значение" class="form-control_bg-white" name="sharpEdgeOther">
                                 </div>
                             </div>
                         </div>
@@ -251,33 +251,6 @@
                                 <div class="col-md-4">
                                     <input type="radio" name="shapeDes" id="shape__des-third" value="des-3">
                                     <label for="shape__des-third" class="shape shape__des-item" style="background-image: url('/assets/shape-des-3.svg')"></label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="order__form-group">
-                            <div class="order__form-title">13. Фотографии</div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <input type="radio" name="photo" id="photo_email" value="emailPhoto">
-                                    <label for="photo_email">Отправлены на foto@ds-lab.ru</label>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="radio" name="photo" id="photo_whatsapp" value="Отправлены на WhatsApp/Viber">
-                                    <label for="photo_whatsapp">Отправлены на WhatsApp/Viber</label>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <input type="radio" name="photo" id="photo_file" value="Прикреплены к форме">
-                                        <label for="photo_file">Прикреплены к форме</label>
-                                    </div>
-                                    <input type="file" name="photo_file" multiple>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <input type="radio" name="photo" id="photo_other" value="Ссылка на фото">
-                                        <label for="photo_other">Другое</label>
-                                    </div>
-                                    <input type="text" class="form-control_bg-white" name="photo_url" placeholder="Источник фото">
                                 </div>
                             </div>
                         </div>
