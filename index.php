@@ -255,15 +255,9 @@
                             </div>
                         </div>
                         <div class="order__form-group">
-                            <div class="order__form-title">14. Коментарии</div>
+                            <div class="order__form-title">13. Коментарии</div>
                             <div class="order__form-data">
                                 <textarea name="comments" class="form-control_bg-white" style="height: 15rem" placeholder="Введите ваши комментарии сюда"></textarea>
-                            </div>
-                        </div>
-                        <div class="order__form-group">
-                            <div class="order__form-title">15. Укажите ваш e-mail</div>
-                            <div class="order__form-data">
-                                <input type="email" name="email" placeholder="Ваш e-mail..." class="form-control_bg-white"></input>
                             </div>
                         </div>
                         <div class="order__form-group">
