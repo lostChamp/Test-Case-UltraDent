@@ -6,7 +6,7 @@ require_once("helpers.php");
 //    foreach ($_POST as $key => $value) {
 //        if (is_array($value)) {
 //            foreach ($value as $elKey => $elValue) {
-//                print $elKey . " = " . gettype($elValue) . "</br>";
+//                print $elKey . " = " . $elValue . "</br>";
 //            }
 //        } else {
 //            print $key . " = " . $value . "</br>";
@@ -14,6 +14,7 @@ require_once("helpers.php");
 //    }
 //}
 // Реализация переноса не особо нравится
+$table = array_chunk($_POST["table"], 4);
 
 
 if(isset($_POST["comments"])) {
@@ -44,6 +45,7 @@ $formForPrint = include_template("formForPrint.php", [
     "generalNameDoctor" => $_POST["generalNameDoctor"] ?? "",
     "generalFIOPatient" => $_POST["generalFIOPatient"] ?? "",
     "sex" => $_POST["sex"] ?? "",
+    "table" => $table,
     "impressions" => $_POST["impressions"] ?? "",
     "materials" => $_POST["materials"] ?? [],
     "tooth" => $_POST["tooth"] ?? [],

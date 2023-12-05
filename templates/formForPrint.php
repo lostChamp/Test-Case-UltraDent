@@ -298,12 +298,14 @@
                             </tr>
                             </thead>
                             <tbody class="">
+                            <?php foreach ($table as $array): ?>
                             <tr class="work__types">
-                                <td class="pt-0 pb-0 pe-1"><input class="text__under td__input" type="text" name="tableType0" value=""></td>
-                                <td class="pt-0 pb-0 pe-1"><input class="text__under td__input" type="number" name="tableNum0" value=""></td>
-                                <td class="pt-0 pb-0 pe-1"><input class="text__under td__input" type="date" name="tableDate0" value="" ></td>
-                                <td class="pt-0 pb-0 pe-1"><input class="text__under td__input" type="text" name="tableTime0" value="" placeholder="чч:мм"></td>
+                                <td class="pt-0 pb-0 pe-1"><input class="text__under td__input" type="text" name="tableType0" value="<?= $array[0]?>"></td>
+                                <td class="pt-0 pb-0 pe-1"><input class="text__under td__input" type="text" name="tableNum0" value="<?= $array[1]?>"></td>
+                                <td class="pt-0 pb-0 pe-1"><input class="text__under td__input" type="text" name="tableDate0" value="<?= $array[2]?>" ></td>
+                                <td class="pt-0 pb-0 pe-1"><input class="text__under td__input" type="text" name="tableTime0" value="<?= $array[3]?>" placeholder="чч:мм"></td>
                             </tr>
+                            <?php endforeach; ?>
                             </tbody>
                         </table>
                     </div>

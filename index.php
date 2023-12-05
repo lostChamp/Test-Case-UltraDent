@@ -73,10 +73,10 @@
                                 </thead>
                                 <tbody class="">
                                     <tr class="work__types">
-                                        <td><input type="text" name="tableType0" value=""></td>
-                                        <td><input type="number" name="tableNum0" value=""></td>
-                                        <td><input type="date" name="tableDate0" value="" ></td>
-                                        <td><input type="text" name="tableTime0" value="" placeholder="чч:мм"></td>
+                                        <td><input type="text" name="table[]" value=""></td>
+                                        <td><input type="number" name="table[]" value=""></td>
+                                        <td><input type="date" name="table[]" value="" ></td>
+                                        <td><input type="text" name="table[]" value="" placeholder="чч:мм"></td>
                                     </tr>
                                 </tbody>
                             </table>
