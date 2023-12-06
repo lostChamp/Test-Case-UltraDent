@@ -13,30 +13,31 @@ require_once("helpers.php");
 //        }
 //    }
 //}
-// Реализация переноса не особо нравится
+
+
 $table = array_chunk($_POST["table"], 4);
 
 
-if(isset($_POST["comments"])) {
-    $maxLenForCommentString = 126;
-    $commentsLen = strlen($_POST["comments"]);
-    $separateForComments = [];
-    $currentOffset = 0;
-
-    if($commentsLen > 126) {
-        $numberCommentsLine = (int)round($commentsLen / $maxLenForCommentString);
-        $i = 1;
-        while($i <= $numberCommentsLine) {
-            $str = substr($_POST["comments"], $currentOffset, $maxLenForCommentString);
-            $separateForComments["comments" . $i] = $str;
-            $currentOffset += $maxLenForCommentString;
-            $i++;
-        }
-        $separateForComments["comments" . $i++] = substr($_POST["comments"], $currentOffset);
-    }else {
-        $separateForComments["comments1"] = $_POST["comments"];
-    }
-}
+//if(isset()) {
+//    $maxLenForCommentString = 126;
+//    $commentsLen = strlen($_POST["comments"]);
+//    $separateForComments = [];
+//    $currentOffset = 0;
+//
+//    if($commentsLen > 126) {
+//        $numberCommentsLine = (int)round($commentsLen / $maxLenForCommentString);
+//        $i = 1;
+//        while($i <= $numberCommentsLine) {
+//            $str = substr($_POST["comments"], $currentOffset, $maxLenForCommentString);
+//            $separateForComments["comments" . $i] = $str;
+//            $currentOffset += $maxLenForCommentString;
+//            $i++;
+//        }
+//        $separateForComments["comments" . $i++] = substr($_POST["comments"], $currentOffset);
+//    }else {
+//        $separateForComments["comments1"] = $_POST["comments"];
+//    }
+//}
 
 
 $formForPrint = include_template("formForPrint.php", [
@@ -61,8 +62,7 @@ $formForPrint = include_template("formForPrint.php", [
     "shapeProm" => $_POST["shapeProm"] ?? "",
     "shapeDes" => $_POST["shapeDes"] ?? "",
     "messagePhoto" => $message ?? "",
-    "comments1" => $separateForComments["comments1"] ?? "",
-    "comments2" => $separateForComments["comments2"] ?? "",
+    "comments" => $_POST["comments"] ?? "",
 ]);
 
 print $formForPrint;

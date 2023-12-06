@@ -89,6 +89,21 @@
                 font-size: 3mm;
             }
 
+            .under__line-green-text {
+                margin-top: 50px;
+                padding-bottom: -1mm;
+                border-bottom: 1px solid #00af00;
+                width: 100%;
+                font-size: 3mm;
+            }
+            .under__line-green-down {
+                margin-top: 50px;
+                padding-bottom: 0.25mm;
+                border-bottom: 1px solid #00af00;
+                width: 100%;
+                font-size: 3mm;
+            }
+
 
             .under__line-green {
                 margin-top: 6mm;
@@ -189,8 +204,8 @@
             }
 
             .tooth__image {
-                width: 80mm;
-                height: 45mm;
+                width: 70mm;
+                height: 50mm;
             }
 
             .tooth__mark:before {
@@ -200,6 +215,349 @@
             .tooth-link__mark:before {
                 width: 2mm;
                 height: 2mm;
+            }
+            .tooth:nth-child(1) .tooth-link__mark, .tooth:nth-child(2) .tooth-link__mark, .tooth:nth-child(3) .tooth-link__mark {
+                top: -0.5rem;
+                left: 5mm;
+            }
+
+            .tooth:nth-child(1) {
+                top: 79%;
+                left: -1%;
+                width: 2rem;
+                height: 2rem;
+            }
+
+            .tooth:nth-child(2) {
+                top: 65%;
+                left: 0.5mm;
+                width: 2rem;
+                height: 2rem;
+            }
+
+            .tooth:nth-child(3) {
+                top: 49%;
+                left: 1.5%;
+                width: 2.2rem;
+                height: 2.2rem;
+            }
+
+            .tooth:nth-child(4) {
+                top: 37%;
+                left: 4%;
+                width: 2rem;
+                height: 1.5rem;
+            }
+
+            .tooth:nth-child(5) {
+                top: 26%;
+                left: 6%;
+                width: 2rem;
+                height: 1.7rem;
+            }
+
+            .tooth:nth-child(6) {
+                top: 16%;
+                left: 10%;
+                width: 1.8rem;
+                height: 1.7rem;
+            }
+
+            .tooth:nth-child(7) {
+                top: 10.5%;
+                left: 14%;
+                width: 1.7rem;
+                height: 1.7rem;
+            }
+
+            .tooth:nth-child(8) {
+                top: 7.9%;
+                left: 18.5%;
+                width: 1.9rem;
+                height: 1.7rem;
+            }
+
+            .tooth:nth-child(9) {
+                top: 7.9%;
+                left: 24%;
+                width: 1.9rem;
+                height: 1.7rem;
+            }
+
+            .tooth:nth-child(10) {
+                top: 10.9%;
+                left: 30%;
+                width: 1.7rem;
+                height: 1.6rem;
+            }
+
+            .tooth:nth-child(11) {
+                top: 15.9%;
+                left: 34%;
+                width: 1.8rem;
+                height: 1.7rem;
+            }
+
+            .tooth:nth-child(12) {
+                top: 25.9%;
+                left: 36%;
+                width: 2rem;
+                height: 1.7rem;
+            }
+
+            .tooth:nth-child(13) {
+                top: 36.5%;
+                left: 38%;
+                width: 2rem;
+                height: 1.7rem;
+            }
+
+            .tooth:nth-child(14) {
+                top: 47.5%;
+                left: 38.5%;
+                width: 2.6rem;
+                height: 2.7rem;
+            }
+
+            .tooth:nth-child(15) {
+                top: 64%;
+                left: 41%;
+                width: 2.2rem;
+                height: 2.2rem;
+            }
+
+            .tooth:nth-child(16) {
+                top: 79%;
+                left: 43%;
+                width: 2rem;
+                height: 2rem;
+            }
+
+            .tooth:nth-child(17) {
+                top: 15.2%;
+                left: 90.5%;
+                width: 2rem;
+                height: 2.2rem;
+            }
+
+            .tooth:nth-child(18) {
+                top: 30.2%;
+                left: 87.5%;
+                width: 2.5rem;
+                height: 2.4rem;
+            }
+
+            .tooth:nth-child(19) {
+                top: 46.2%;
+                left: 85%;
+                width: 2.5rem;
+                height: 2.4rem;
+            }
+
+            .tooth:nth-child(20) {
+                top: 61.2%;
+                left: 84.5%;
+                width: 2rem;
+                height: 1.7rem;
+            }
+
+            .tooth:nth-child(21) {
+                top: 71.8%;
+                left: 83%;
+                width: 1.8rem;
+                height: 1.5rem;
+            }
+
+            .tooth:nth-child(22) {
+                top: 78.8%;
+                left: 81%;
+                width: 1.3rem;
+                height: 1.5rem;
+            }
+
+            .tooth:nth-child(23) {
+                top: 82.8%;
+                left: 77%;
+                width: 1.3rem;
+                height: 1.5rem;
+            }
+
+            .tooth:nth-child(24) {
+                top: 83.5%;
+                left: 73%;
+                width: 1.3rem;
+                height: 1.5rem;
+            }
+
+            .tooth:nth-child(25) {
+                top: 83.8%;
+                left: 69%;
+                width: 1.3rem;
+                height: 1.5rem;
+            }
+
+            .tooth:nth-child(26) {
+                top: 83.8%;
+                left: 65%;
+                width: 1.3rem;
+                height: 1.5rem;
+            }
+
+            .tooth:nth-child(27) {
+                top: 79.8%;
+                left: 61.5%;
+                width: 1.3rem;
+                height: 1.5rem;
+            }
+
+            .tooth:nth-child(28) {
+                top: 71.8%;
+                left: 57%;
+                width: 1.7rem;
+                height: 1.5rem;
+            }
+
+            .tooth:nth-child(29) {
+                top: 61.8%;
+                left: 54%;
+                width: 1.9rem;
+                height: 1.7rem;
+            }
+
+            .tooth:nth-child(30) {
+                top: 45.8%;
+                left: 51%;
+                width: 2.5rem;
+                height: 2.7rem;
+            }
+
+            .tooth:nth-child(31) {
+                top: 29.8%;
+                left: 49%;
+                width: 2.3rem;
+                height: 2.7rem;
+            }
+
+            .tooth:nth-child(32) {
+                top: 14.8%;
+                left: 48%;
+                width: 2rem;
+                height: 2.5rem;
+            }
+
+            .tooth:nth-child(3) .tooth-link__mark {
+                bottom: 3%;
+                left: 55%;
+            }
+            .tooth:nth-child(4) .tooth-link__mark {
+                top: -0.3rem;
+                left: 55%;
+            }
+            .tooth:nth-child(5) .tooth-link__mark {
+                top: 0.1rem;
+                left: 56%;
+            }
+            .tooth:nth-child(6) .tooth-link__mark {
+                top: 0.65rem;
+                left: 47%;
+            }
+            .tooth:nth-child(7) .tooth-link__mark {
+                top: 1rem;
+                left: 45%;
+            }
+            .tooth:nth-child(8) .tooth-link__mark {
+                top: 1.1rem;
+                left: 33%;
+            }
+            .tooth:nth-child(9) .tooth-link__mark {
+                top: 1.2rem;
+                left: 16%;
+            }
+            .tooth:nth-child(10) .tooth-link__mark {
+                top: 1.15rem;
+                left: -7%;
+            }
+            .tooth:nth-child(11) .tooth-link__mark {
+                top: 1rem;
+                left: -25%;
+            }
+            .tooth:nth-child(12) .tooth-link__mark {
+                top: 0.9rem;
+                left: -15%;
+            }
+            .tooth:nth-child(13) .tooth-link__mark {
+                top: 1rem;
+                left: -19%;
+            }
+            .tooth:nth-child(14) .tooth-link__mark {
+                top: 1.6rem;
+                left: -15%;
+            }
+            .tooth:nth-child(15) .tooth-link__mark {
+                top: 1.3rem;
+                left: -20%;
+            }
+
+
+            .tooth:nth-child(17) .tooth-link__mark {
+                top: 0.8rem;
+                left: -0.8rem;
+            }
+            .tooth:nth-child(18) .tooth-link__mark {
+                top: 0.8rem;
+                left: -0.8rem;
+            }
+            .tooth:nth-child(19) .tooth-link__mark {
+                top: 0.9rem;
+                left: -0.7rem;
+            }
+            .tooth:nth-child(20) .tooth-link__mark {
+                top: 0.25rem;
+                left: -0.8rem;
+            }
+            .tooth:nth-child(21) .tooth-link__mark {
+                top: -0.25rem;
+                left: -0.85rem;
+            }
+            .tooth:nth-child(22) .tooth-link__mark {
+                top: -0.6rem;
+                left: -0.9rem;
+            }
+            .tooth:nth-child(23) .tooth-link__mark {
+                top: -0.9rem;
+                left: -0.7rem;
+            }
+            .tooth:nth-child(24) .tooth-link__mark {
+                top: -0.9rem;
+                left: -0.5rem;
+            }
+            .tooth:nth-child(25) .tooth-link__mark {
+                top: -1rem;
+                left: -0.4rem;
+            }
+            .tooth:nth-child(26) .tooth-link__mark {
+                top: -1.3rem;
+                left: -0.2rem;
+            }
+            .tooth:nth-child(27) .tooth-link__mark {
+                top: -1.3rem;
+                left: 0;
+            }
+            .tooth:nth-child(28) .tooth-link__mark {
+                top: -1rem;
+                left: 0.5rem;
+            }
+            .tooth:nth-child(29) .tooth-link__mark {
+                top: -1rem;
+                left: 0.7rem;
+            }
+            .tooth:nth-child(30) .tooth-link__mark {
+                top: -1.1rem;
+                left: 0.9rem;
+            }
+            .tooth:nth-child(31) .tooth-link__mark {
+                top: -1rem;
+                left: 1rem;
             }
 
         }
@@ -221,32 +579,31 @@
                 <div class="mt-2 col-6 p-0">
                     <h3 class="group__title ">1. Общие данные:</h3>
                     <div>
-                        <p class="text__under text__bold-green">
+                        <div class="text__under text__bold-green">
                             Стоматологическая
-                        </p>
+                        </div>
                         <div class="d-flex align-items-end">
-                            <p class="text__under text__bold-green">
+                            <div class="text__under text__bold-green">
                                 клиника:
-                            </p>
+                            </div>
                             <div class="ms-3 mt-0 mb-1 under__line-green"><?=$generalNameOfHospital?></div>
                         </div>
 
                         <div class="d-flex align-items-end">
-                            <p class="text__under text__bold-green mt-1">
-                                Дата:
-                            </p>
+                            <div class="text__under text__bold-green mt-1">Дата:
+                            </div>
                             <div class="ms-3 mt-0 mb-1 under__line-green"><?=$generalDate?></div>
                         </div>
                         <div class="d-flex align-items-end">
-                            <p class="text__under text__bold-green mt-1">
+                            <div class="text__under text__bold-green mt-1">
                                 Врач:
-                            </p>
+                            </div>
                             <div class="ms-3 mt-0 mb-1 under__line-green"><?=$generalNameDoctor?></div>
                         </div>
                         <div class="d-flex text-nowrap align-items-end">
-                            <p class="text__under text__bold-green mt-1">
+                            <div class="text__under text__bold-green mt-1">
                                 ФИО пациента:
-                            </p>
+                            </div>
                             <div class="ms-3 mt-0 mb-1 under__line-green"><?=$generalFIOPatient?></div>
                         </div>
 
@@ -637,8 +994,7 @@
         </div>
         <div class="order__group-fourth">
             <h2 class="order_title text-uppercase mt-5">комментарии к работе:</h2>
-            <p class="under__line-green mt-3"><?= $comments1?></p>
-            <p class="under__line-green <?=$comments2 !== "" ? 'mt-3' : ''?>"><?= $comments2?></p>
+            <p class="mt-3 under__line-green under__line-green-down"><span class="under__line-green-text"><?= $comments?></span></p>
         </div>
     </div>
 </body>
