@@ -2,43 +2,7 @@
 
 require_once("helpers.php");
 
-//if(!empty($_POST)) {
-//    foreach ($_POST as $key => $value) {
-//        if (is_array($value)) {
-//            foreach ($value as $elKey => $elValue) {
-//                print $elKey . " = " . $elValue . "</br>";
-//            }
-//        } else {
-//            print $key . " = " . $value . "</br>";
-//        }
-//    }
-//}
-
-
 $table = array_chunk($_POST["table"], 4);
-
-
-//if(isset()) {
-//    $maxLenForCommentString = 126;
-//    $commentsLen = strlen($_POST["comments"]);
-//    $separateForComments = [];
-//    $currentOffset = 0;
-//
-//    if($commentsLen > 126) {
-//        $numberCommentsLine = (int)round($commentsLen / $maxLenForCommentString);
-//        $i = 1;
-//        while($i <= $numberCommentsLine) {
-//            $str = substr($_POST["comments"], $currentOffset, $maxLenForCommentString);
-//            $separateForComments["comments" . $i] = $str;
-//            $currentOffset += $maxLenForCommentString;
-//            $i++;
-//        }
-//        $separateForComments["comments" . $i++] = substr($_POST["comments"], $currentOffset);
-//    }else {
-//        $separateForComments["comments1"] = $_POST["comments"];
-//    }
-//}
-
 
 $formForPrint = include_template("formForPrint.php", [
     "generalNameOfHospital" => $_POST["generalNameOfHospital"] ?? "",
@@ -64,5 +28,6 @@ $formForPrint = include_template("formForPrint.php", [
     "messagePhoto" => $message ?? "",
     "comments" => $_POST["comments"] ?? "",
 ]);
+
 
 print $formForPrint;
