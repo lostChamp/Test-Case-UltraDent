@@ -1,0 +1,551 @@
+@media print {
+    * {
+        -webkit-print-color-adjust: exact !important;
+    }
+
+    .container {
+        margin: 0 auto;
+        padding: 0;
+        width: 210mm;
+        height: 297mm;
+    }
+
+    .logo-img {
+        width: 40mm;
+        height: 8mm;
+    }
+
+    .order_title {
+        font-weight: bold;
+        color: #00af00;
+        display: inline-block;
+        font-size: 3.5mm;
+        margin-top: 10px;
+    }
+
+    .group__title {
+        color: #000;
+        font-size: 3mm;
+    }
+
+    .label__text {
+        margin-left: 0;
+        color: #000;
+        font-size: 2mm;
+    }
+
+    input[type="checkbox"] {
+        height: 2mm;
+        width: 2mm;
+        color: #000;
+    }
+
+    .text__under {
+        font-size: 2mm;
+        color: #000;
+        margin-bottom: 0;
+    }
+
+    .text__bold-green {
+        color: #00af00;
+        font-weight: bold;
+        font-size: 3mm;
+    }
+
+    .under__line-first {
+        margin-top: 6mm;
+        border-bottom: 1px solid #000;
+        width: 40mm;
+        font-size: 3mm;
+    }
+
+    .me-6 {
+        margin-right: 10%;
+    }
+
+    .under__line-second {
+        margin-top: 6mm;
+        border-bottom: 1px solid #000;
+        width: 64mm;
+        font-size: 3mm;
+    }
+
+    .under__line-second .under__line-second-print {
+        padding-top: 6mm;
+        border-bottom: 1px solid #000;
+        width: 64mm;
+        font-size: 3mm;
+    }
+
+    .under__line-green-text {
+        margin-top: 50px;
+        padding-bottom: -1mm;
+        border-bottom: 1px solid #00af00;
+        width: 100%;
+        font-size: 3mm;
+    }
+    .under__line-green-down {
+        margin-top: 50px;
+        padding-bottom: 0.25mm;
+        border-bottom: 1px solid #00af00;
+        width: 100%;
+        font-size: 3mm;
+    }
+
+
+    .under__line-green {
+        margin-top: 6mm;
+        border-bottom: 1px solid #00af00;
+        width: 100%;
+        font-size: 3mm;
+    }
+
+
+    .border__green {
+        border: 2px solid #00af00;
+    }
+
+    .bottom__border-write {
+        border-bottom: 1px solid #00af00;
+    }
+
+
+    .top-margin {
+        margin-top: 5mm;
+    }
+
+    .top-margin-4mm {
+        margin-top: 4mm;
+    }
+
+    .phone_number {
+        font-size: 3mm;
+    }
+
+    .other-left-m {
+        margin-left: 0;
+    }
+
+    .teeth-img1 {
+        width: 70mm;
+        height: 40mm;
+    }
+
+    .teeth-img2 {
+        width: 63mm;
+        height: 30mm;
+    }
+
+    .checkbox-underpilot-wrapping {
+        text-wrap: none;
+    }
+
+    .top-margin-3mm {
+        margin-top: 3mm;
+    }
+
+    .print-margin-label7 {
+        margin-top: 3mm;
+    }
+
+    .width-print-lines1 {
+        width: 30mm;
+    }
+
+    .correct-margin-lines1 {
+        margin-top: 10mm;
+    }
+
+    .under__line-third {
+        margin-top: 6mm;
+        border-bottom: 1px solid #000;
+        width: 45mm;
+        font-size: 3mm;
+    }
+
+
+    input[type="radio"] {
+        height:2mm;
+        width:2mm;
+    }
+
+    .shape__des-item, .shape__prom-item, .shape-item {
+        width: 4mm;
+        height: 4mm;
+        cursor: pointer;
+        display: block;
+    }
+
+    .shape {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .margin-top-print0 {
+        margin-top: 0;
+    }
+
+    .td__input {
+        margin: 0;
+        padding: 0;
+    }
+
+    .tooth__image {
+        width: 70mm;
+        height: 50mm;
+    }
+
+    .tooth__mark:before {
+        width: 2.5mm;
+        height: 2.5mm;
+    }
+    .tooth-link__mark:before {
+        width: 2mm;
+        height: 2mm;
+    }
+    .tooth:nth-child(1) .tooth-link__mark, .tooth:nth-child(2) .tooth-link__mark, .tooth:nth-child(3) .tooth-link__mark {
+        top: -0.5rem;
+        left: 5mm;
+    }
+
+    .tooth:nth-child(1) {
+        top: 79%;
+        left: -1%;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .tooth:nth-child(2) {
+        top: 65%;
+        left: 0.5mm;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .tooth:nth-child(3) {
+        top: 49%;
+        left: 1.5%;
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+
+    .tooth:nth-child(4) {
+        top: 37%;
+        left: 4%;
+        width: 2rem;
+        height: 1.5rem;
+    }
+
+    .tooth:nth-child(5) {
+        top: 26%;
+        left: 6%;
+        width: 2rem;
+        height: 1.7rem;
+    }
+
+    .tooth:nth-child(6) {
+        top: 16%;
+        left: 10%;
+        width: 1.8rem;
+        height: 1.7rem;
+    }
+
+    .tooth:nth-child(7) {
+        top: 10.5%;
+        left: 14%;
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+
+    .tooth:nth-child(8) {
+        top: 7.9%;
+        left: 18.5%;
+        width: 1.9rem;
+        height: 1.7rem;
+    }
+
+    .tooth:nth-child(9) {
+        top: 7.9%;
+        left: 24%;
+        width: 1.9rem;
+        height: 1.7rem;
+    }
+
+    .tooth:nth-child(10) {
+        top: 10.9%;
+        left: 30%;
+        width: 1.7rem;
+        height: 1.6rem;
+    }
+
+    .tooth:nth-child(11) {
+        top: 15.9%;
+        left: 34%;
+        width: 1.8rem;
+        height: 1.7rem;
+    }
+
+    .tooth:nth-child(12) {
+        top: 25.9%;
+        left: 36%;
+        width: 2rem;
+        height: 1.7rem;
+    }
+
+    .tooth:nth-child(13) {
+        top: 36.5%;
+        left: 38%;
+        width: 2rem;
+        height: 1.7rem;
+    }
+
+    .tooth:nth-child(14) {
+        top: 47.5%;
+        left: 38.5%;
+        width: 2.6rem;
+        height: 2.7rem;
+    }
+
+    .tooth:nth-child(15) {
+        top: 64%;
+        left: 41%;
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+
+    .tooth:nth-child(16) {
+        top: 79%;
+        left: 43%;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .tooth:nth-child(17) {
+        top: 15.2%;
+        left: 90.5%;
+        width: 2rem;
+        height: 2.2rem;
+    }
+
+    .tooth:nth-child(18) {
+        top: 30.2%;
+        left: 87.5%;
+        width: 2.5rem;
+        height: 2.4rem;
+    }
+
+    .tooth:nth-child(19) {
+        top: 46.2%;
+        left: 85%;
+        width: 2.5rem;
+        height: 2.4rem;
+    }
+
+    .tooth:nth-child(20) {
+        top: 61.2%;
+        left: 84.5%;
+        width: 2rem;
+        height: 1.7rem;
+    }
+
+    .tooth:nth-child(21) {
+        top: 71.8%;
+        left: 83%;
+        width: 1.8rem;
+        height: 1.5rem;
+    }
+
+    .tooth:nth-child(22) {
+        top: 78.8%;
+        left: 81%;
+        width: 1.3rem;
+        height: 1.5rem;
+    }
+
+    .tooth:nth-child(23) {
+        top: 82.8%;
+        left: 77%;
+        width: 1.3rem;
+        height: 1.5rem;
+    }
+
+    .tooth:nth-child(24) {
+        top: 83.5%;
+        left: 73%;
+        width: 1.3rem;
+        height: 1.5rem;
+    }
+
+    .tooth:nth-child(25) {
+        top: 83.8%;
+        left: 69%;
+        width: 1.3rem;
+        height: 1.5rem;
+    }
+
+    .tooth:nth-child(26) {
+        top: 83.8%;
+        left: 65%;
+        width: 1.3rem;
+        height: 1.5rem;
+    }
+
+    .tooth:nth-child(27) {
+        top: 79.8%;
+        left: 61.5%;
+        width: 1.3rem;
+        height: 1.5rem;
+    }
+
+    .tooth:nth-child(28) {
+        top: 71.8%;
+        left: 57%;
+        width: 1.7rem;
+        height: 1.5rem;
+    }
+
+    .tooth:nth-child(29) {
+        top: 61.8%;
+        left: 54%;
+        width: 1.9rem;
+        height: 1.7rem;
+    }
+
+    .tooth:nth-child(30) {
+        top: 45.8%;
+        left: 51%;
+        width: 2.5rem;
+        height: 2.7rem;
+    }
+
+    .tooth:nth-child(31) {
+        top: 29.8%;
+        left: 49%;
+        width: 2.3rem;
+        height: 2.7rem;
+    }
+
+    .tooth:nth-child(32) {
+        top: 14.8%;
+        left: 48%;
+        width: 2rem;
+        height: 2.5rem;
+    }
+
+    .tooth:nth-child(3) .tooth-link__mark {
+        bottom: 3%;
+        left: 55%;
+    }
+    .tooth:nth-child(4) .tooth-link__mark {
+        top: -0.3rem;
+        left: 55%;
+    }
+    .tooth:nth-child(5) .tooth-link__mark {
+        top: 0.1rem;
+        left: 56%;
+    }
+    .tooth:nth-child(6) .tooth-link__mark {
+        top: 0.65rem;
+        left: 47%;
+    }
+    .tooth:nth-child(7) .tooth-link__mark {
+        top: 1rem;
+        left: 45%;
+    }
+    .tooth:nth-child(8) .tooth-link__mark {
+        top: 1.1rem;
+        left: 33%;
+    }
+    .tooth:nth-child(9) .tooth-link__mark {
+        top: 1.2rem;
+        left: 16%;
+    }
+    .tooth:nth-child(10) .tooth-link__mark {
+        top: 1.15rem;
+        left: -7%;
+    }
+    .tooth:nth-child(11) .tooth-link__mark {
+        top: 1rem;
+        left: -25%;
+    }
+    .tooth:nth-child(12) .tooth-link__mark {
+        top: 0.9rem;
+        left: -15%;
+    }
+    .tooth:nth-child(13) .tooth-link__mark {
+        top: 1rem;
+        left: -19%;
+    }
+    .tooth:nth-child(14) .tooth-link__mark {
+        top: 1.6rem;
+        left: -15%;
+    }
+    .tooth:nth-child(15) .tooth-link__mark {
+        top: 1.3rem;
+        left: -20%;
+    }
+
+
+    .tooth:nth-child(17) .tooth-link__mark {
+        top: 0.8rem;
+        left: -0.8rem;
+    }
+    .tooth:nth-child(18) .tooth-link__mark {
+        top: 0.8rem;
+        left: -0.8rem;
+    }
+    .tooth:nth-child(19) .tooth-link__mark {
+        top: 0.9rem;
+        left: -0.7rem;
+    }
+    .tooth:nth-child(20) .tooth-link__mark {
+        top: 0.25rem;
+        left: -0.8rem;
+    }
+    .tooth:nth-child(21) .tooth-link__mark {
+        top: -0.25rem;
+        left: -0.85rem;
+    }
+    .tooth:nth-child(22) .tooth-link__mark {
+        top: -0.6rem;
+        left: -0.9rem;
+    }
+    .tooth:nth-child(23) .tooth-link__mark {
+        top: -0.9rem;
+        left: -0.7rem;
+    }
+    .tooth:nth-child(24) .tooth-link__mark {
+        top: -0.9rem;
+        left: -0.5rem;
+    }
+    .tooth:nth-child(25) .tooth-link__mark {
+        top: -1rem;
+        left: -0.4rem;
+    }
+    .tooth:nth-child(26) .tooth-link__mark {
+        top: -1.3rem;
+        left: -0.2rem;
+    }
+    .tooth:nth-child(27) .tooth-link__mark {
+        top: -1.3rem;
+        left: 0;
+    }
+    .tooth:nth-child(28) .tooth-link__mark {
+        top: -1rem;
+        left: 0.5rem;
+    }
+    .tooth:nth-child(29) .tooth-link__mark {
+        top: -1rem;
+        left: 0.7rem;
+    }
+    .tooth:nth-child(30) .tooth-link__mark {
+        top: -1.1rem;
+        left: 0.9rem;
+    }
+    .tooth:nth-child(31) .tooth-link__mark {
+        top: -1rem;
+        left: 1rem;
+    }
+
+}

@@ -29,18 +29,13 @@ $formForPrint = include_template("formForPrint.php", [
     "comments" => $_POST["comments"] ?? "",
 ]);
 
-$fonts = file_get_contents("./styles/fonts.css");
-$bootstrap = file_get_contents("./styles/bootstrap/bootstrap.min.css") . $fonts;
-$styles = file_get_contents("./styles/formForPrint.css") . $bootstrap;
+print $_POST["generalFIOPatient"];
 
-$css = "<style> $styles </style>";
-
-$css .= $formForPrint;
 $name='Заказ_наряд_' . $_POST["generalFIOPatient"] . "_" . date('d.m.Y')  . ".html";
 
 if (!file_exists('./order_forms/' . $name)) {
     $handle = fopen('./order_forms/' . $name,'w');
-    fwrite($handle, $css);
+    fwrite($handle, $formForPrint);
     fclose($handle);
 }
 
