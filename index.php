@@ -47,12 +47,12 @@
                                     <label class="mb-3 label__general">Пол пациента</label>
                                     <div class="row">
                                         <div class="col-md-3">
-                                            <input type="radio" id="sex" name="sex" value="M">
-                                            <label for="sex" class="mb-3">Мужской</label>
+                                            <input type="radio" id="M" name="sex" value="M">
+                                            <label for="M" class="mb-3">Мужской</label>
                                         </div>
                                         <div class="col-md-3">
-                                            <input type="radio" id="sex" name="sex" value="W">
-                                            <label for="sex" class="mb-3">Женский</label>
+                                            <input type="radio" id="W" name="sex" value="W">
+                                            <label for="W" class="mb-3">Женский</label>
                                         </div>
                                     </div>
                                 </div>
@@ -100,8 +100,8 @@
 
                                 </div>
                                 <div class="col-md-4 d-inline-block">
-                                    <input type="radio" name="impressions" id="analog" value="digital">
-                                    <label for="analog">Цифровые</label>
+                                    <input type="radio" name="impressions" id="digital" value="digital">
+                                    <label for="digital">Цифровые</label>
                                 </div>
                             </div>
                         </div>
@@ -134,7 +134,7 @@
                                 </div>
                                 <div class="col-md-4">
                                     <input type="checkbox" name="materials[]" id="material-seventh" value="Композит">
-                                    <label for="material-sixth">Композит</label>
+                                    <label for="material-seventh">Композит</label>
                                 </div>
                                 <div class="col-md-4">
                                     <input type="checkbox" name="materials[]" id="material-eighth" value="Acry Free">

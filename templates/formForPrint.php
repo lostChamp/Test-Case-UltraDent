@@ -58,10 +58,10 @@
                         <div class="d-flex text-nowrap align-items-end">
                             <div class="me-6">
                                 <label class="label__text text__bold-green ms-0 mt-1" for="M">М</label>
-                                <input class="me-3" type="checkbox" id="M" value="Под пилотное сверлени" <?= $sex === "M" ? "checked" : ""?>>
+                                <input class="me-3" type="checkbox" id="M" value="M" <?= $sex === "M" ? "checked" : ""?>>
 
-                                <label class="label__text text__bold-green" for="pilot">Ж</label>
-                                <input type="checkbox" id="W" value="Под пилотное сверлени" <?= $sex === "W" ? "checked" : ""?>>
+                                <label class="label__text text__bold-green" for="W">Ж</label>
+                                <input type="checkbox" id="W" value="W" <?= $sex === "W" ? "checked" : ""?>>
                             </div>
                             <div class="ms-3 mt-0 mb-1 under__line-green"></div>
                         </div>
@@ -323,40 +323,40 @@
                     <h3 class="group__title mt-5">5. Материал:</h3>
                     <div class="row">
                         <div class="col-4">
-                            <input type="checkbox" <?= in_array("Co-Cr", $materials) ? "checked" : ""?>>
-                            <label class="label__text me-1 ms-0 top-margin-3mm" for="">Co-Cr</label>
+                            <input type="checkbox" id="material-first" <?= in_array("Co-Cr", $materials) ? "checked" : ""?>>
+                            <label class="label__text me-1 ms-0 top-margin-3mm" for="material-first">Co-Cr</label>
                         </div>
                         <div class="col-4">
-                            <input type="checkbox" <?= in_array("Zr-O2", $materials) ? "checked" : ""?>>
-                            <label class="label__text ms-0 top-margin-3mm" for="">ZrO²</label>
+                            <input type="checkbox" id="material-second" <?= in_array("Zr-O2", $materials) ? "checked" : ""?>>
+                            <label class="label__text ms-0 top-margin-3mm" for="material-second">ZrO²</label>
                         </div>
                         <div class="col-4 p-0">
-                            <input type="checkbox" <?= in_array("Prettau", $materials) ? "checked" : ""?>>
-                            <label class="label__text ms-0 top-margin-3mm" for="">Prettau</label>
+                            <input type="checkbox" id="material-third" <?= in_array("Prettau", $materials) ? "checked" : ""?>>
+                            <label class="label__text ms-0 top-margin-3mm" for="material-third">Prettau</label>
                         </div>
                         <div class="col-4">
-                            <input type="checkbox" <?= in_array("E-max", $materials) ? "checked" : ""?>>
-                            <label class="label__text me-1 ms-0 top-margin-3mm" for="">E-max</label>
+                            <input type="checkbox" id="material-fourth" <?= in_array("E-max", $materials) ? "checked" : ""?>>
+                            <label class="label__text me-1 ms-0 top-margin-3mm" for="material-fourth">E-max</label>
                         </div>
                         <div class="col-4">
-                            <input type="checkbox"  <?= in_array("Ti", $materials) ? "checked" : ""?>>
-                            <label class="label__text ms-0 top-margin-3mm" for="">Ti</label>
+                            <input type="checkbox" id="material-fifth" <?= in_array("Ti", $materials) ? "checked" : ""?>>
+                            <label class="label__text ms-0 top-margin-3mm" for="material-fifth">Ti</label>
                         </div>
                         <div class="col-4 p-0">
-                            <input type="checkbox" <?= in_array("Акрил/РММА", $materials) ? "checked" : ""?>>
-                            <label class="label__text ms-0 top-margin-3mm" for="">Акрил/РММА</label>
+                            <input type="checkbox" id="material-sixth" <?= in_array("Акрил/РММА", $materials) ? "checked" : ""?>>
+                            <label class="label__text ms-0 top-margin-3mm" for="material-sixth">Акрил/РММА</label>
                         </div>
                         <div class="col-4">
-                            <input type="checkbox" <?= in_array("Композит", $materials) ? "checked" : ""?>>
-                            <label class="label__text me-1 ms-0 top-margin-3mm" for="">Композит</label>
+                            <input type="checkbox" id="material-seventh" <?= in_array("Композит", $materials) ? "checked" : ""?>>
+                            <label class="label__text me-1 ms-0 top-margin-3mm" for="material-seventh">Композит</label>
                         </div>
                         <div class="col-4">
-                            <input type="checkbox" <?= in_array("Acry Free", $materials) ? "checked" : ""?>>
-                            <label class="label__text ms-0 top-margin-3mm" for="">Acry Free</label>
+                            <input type="checkbox" id="material-eighth" <?= in_array("Acry Free", $materials) ? "checked" : ""?>>
+                            <label class="label__text ms-0 top-margin-3mm" for="material-eighth">Acry Free</label>
                         </div>
                         <div class="col-4 p-0">
-                            <input type="checkbox" <?= in_array("Нейлон", $materials) ? "checked" : ""?>>
-                            <label class="label__text ms-0 top-margin-3mm" for="">Нейлон</label>
+                            <input type="checkbox" id="material-ninth" <?= in_array("Нейлон", $materials) ? "checked" : ""?>>
+                            <label class="label__text ms-0 top-margin-3mm" for="material-ninth">Нейлон</label>
                         </div>
                     </div>
                     <h3 class="group__title mt-5">6. Цвет зубов - боковая группа</h3>
