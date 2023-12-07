@@ -31,7 +31,7 @@ $formForPrint = include_template("formForPrint.php", [
 
 print $_POST["generalFIOPatient"];
 
-$name='Заказ_наряд_' . $_POST["generalFIOPatient"] . "_" . date('d.m.Y')  . ".html";
+$name = 'Заказ_наряд_' . $_POST["generalFIOPatient"] . "_" . date('d.m.Y')  . ".html";
 
 if (!file_exists('./order_forms/' . $name)) {
     $handle = fopen('./order_forms/' . $name,'w');
