@@ -29,8 +29,6 @@ $formForPrint = include_template("formForPrint.php", [
     "comments" => $_POST["comments"] ?? "",
 ]);
 
-print $_POST["generalFIOPatient"];
-
 $name = 'Заказ_наряд_' . $_POST["generalFIOPatient"] . "_" . date('d.m.Y')  . ".html";
 
 if (!file_exists('./order_forms/' . $name)) {
