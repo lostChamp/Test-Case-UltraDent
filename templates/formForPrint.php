@@ -570,7 +570,7 @@
                 <h2 class="order_title">заказ наряд на выполнение хирургического шаблона</h2>
             </div>
             <div class="col mt-3 d-flex justify-content-end">
-                <img class="logo-img" src="/assets/logo.png" alt="">
+                <img class="logo-img" src="../assets/logo.png" alt="">
             </div>
         </div>
 
@@ -670,7 +670,7 @@
                     <div class="col-5">
                         <h3 class="group__title mt-5 text-nowrap">3. Схема протезирования</h3>
                         <div class="tooth-schema">
-                            <img src="/assets/schema@2x.png" alt="" class="tooth__image">
+                            <img src="../assets/schema@2x.png" alt="" class="tooth__image">
                             <div class="tooth-checkboxes">
                                 <div class="tooth">
                                     <input type="checkbox" value="1" id="tooth-1" name="tooth[]" class="tooth__checkbox" <?= in_array("1", $tooth) ? "checked" : ""?>>
@@ -963,30 +963,30 @@
                     <div class="row ms-3">
                         <div class="col-3">
                             <input type="radio" name="shapeProm" id="shape__prom-first" value="prom-1" <?= $shapeProm === "prom-1" ? "checked" : ""?>>
-                            <label for="shape__prom-first" class="shape shape__prom-item" style="background-image: url('/assets/shape-prom-1.svg')"></label>
+                            <label for="shape__prom-first" class="shape shape__prom-item" style="background-image: url('../assets/shape-prom-1.svg')"></label>
                         </div>
                         <div class="col-3">
                             <input type="radio" name="shapeProm" id="shape__prom-second" value="prom-2" <?= $shapeProm === "prom-2" ? "checked" : ""?>>
-                            <label for="shape__prom-second" class="shape shape__prom-item" style="background-image: url('/assets/shape-prom-2.svg')"></label>
+                            <label for="shape__prom-second" class="shape shape__prom-item" style="background-image: url('../assets/shape-prom-2.svg')"></label>
                         </div>
                         <div class="col-3">
                             <input type="radio" name="shapeProm" id="shape__prom-third" value="prom-3"<?= $shapeProm === "prom-3" ? "checked" : ""?>>
-                            <label for="shape__prom-third" class="shape shape__prom-item" style="background-image: url('/assets/shape-prom-3.svg')"></label>
+                            <label for="shape__prom-third" class="shape shape__prom-item" style="background-image: url('../assets/shape-prom-3.svg')"></label>
                         </div>
                     </div>
                     <h3 class="group__title mt-5">12. Контур формирования десеневого края</h3>
                     <div class="row ms-3">
                         <div class="col-3">
                             <input type="radio" name="shapeDes" id="shape__des-first" value="des-1" <?= $shapeDes === "des-1" ? "checked" : "" ?>>
-                            <label for="shape__des-first" class="shape shape__des-item" style="background-image: url('/assets/shape-des-1.svg')"></label>
+                            <label for="shape__des-first" class="shape shape__des-item" style="background-image: url('../assets/shape-des-1.svg')"></label>
                         </div>
                         <div class="col-3">
                             <input type="radio" name="shapeDes" id="shape__des-second" value="des-2" <?= $shapeDes === "des-2" ? "checked" : "" ?>>
-                            <label for="shape__des-second" class="shape shape__des-item" style="background-image: url('/assets/shape-des-2.svg')"></label>
+                            <label for="shape__des-second" class="shape shape__des-item" style="background-image: url('../assets/shape-des-2.svg')"></label>
                         </div>
                         <div class="col-3">
                             <input type="radio" name="shapeDes" id="shape__des-third" value="des-3" <?= $shapeDes === "des-3" ? "checked" : "" ?>>
-                            <label for="shape__des-third" class="shape shape__des-item" style="background-image: url('/assets/shape-des-3.svg')"></label>
+                            <label for="shape__des-third" class="shape shape__des-item" style="background-image: url('../assets/shape-des-3.svg')"></label>
                         </div>
                     </div>
                 </div>
